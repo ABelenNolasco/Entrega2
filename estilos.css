@@ -1,0 +1,47 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:rgb(82, 43, 43)
+}
+nav{
+    background-color: burlywood;
+    text-align: center;
+    font-size: 30px;
+}
+.index{
+    background-image: url(imagenes/fondoIndex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:blanchedalmond;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color:burlywood;
+}
+
+main{
+    font-size: 20px;
+    text-align: center;
+}
+
+.imgtexto{
+    width:300px;
+    height: 350px;
+}
+body{
+background-color: blanchedalmond;
+color: black;
+}
+ul{
+    list-style-type: square;
+
+}
+article img{
+    width:300px;
+    height: 350px;
+}
+footer{
+    background-color:brown;
+    font-size: small;
+
+}
