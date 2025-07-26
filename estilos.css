@@ -26,7 +26,7 @@ header {
     background-color:#81382E;
     position: sticky;
     top:0;
-    color:#e9dbd5
+    color:#e9dbd5;
 }
 
 nav{
@@ -98,11 +98,11 @@ grid-area:item1;
 }
 .item2 {
     grid-area: item2;
-    background-color: #ac7c68
+    background-color: #ac7c68;
 }
 .item3 {
     grid-area: item3;
-    background-color: #ac7c68
+    background-color: #ac7c68;
 }
 .item4 {
     grid-area: item4;
@@ -116,7 +116,7 @@ grid-area:item1;
 article img {
     width: 100%;
     max-width: 200px;
-    height: 200px
+    height: 200px;
 }
 
 .productos article{
@@ -188,7 +188,7 @@ article p{
     grid-template-columns: 35% 65%;
     background-color:#81382E;
     color: #e9dbd5;
-    padding-right:15px
+    padding-right:15px;
 }
 .contacto-formulario{
     background-image: url(../imagenes/comida.jpg);
@@ -261,6 +261,6 @@ footer div{
     }
     .titulo-card {
         font-size: 20px;
-  }
+    }
 }
 
