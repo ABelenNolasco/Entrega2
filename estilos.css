@@ -8,7 +8,16 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     color:#e9dbd5;
+    text-shadow: 1px 1px 2px black;
     font-family: LXGW WenKai Mono TC;
+    width: 100%;
+    min-height: 100px;
+    height:100%;
+}
+.logo{
+    width: 10%;
+    max-width :50px;
+    height:60px;
 }
 
 header {
@@ -105,7 +114,8 @@ grid-area:item1;
 }
 
 article img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px
 }
 
@@ -117,7 +127,8 @@ article img {
     background-color: #402B22;
     border-radius: 9px;
     padding:10px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 400px;
     color:#e9dbd5;
     margin: 10px;
@@ -131,14 +142,16 @@ article img {
 }
 
 h2{
-    font-size: 42px;
+    font-size:60px;
     text-align: center;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black;
 }
-h3{
 
-    font-size: 35px;
+h3{
+    font-size: 40px;
     text-align: center;
+    text-shadow: 1px 1px 2px black;
 }
 
 article p{
@@ -150,6 +163,7 @@ article p{
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black;
     
 }
 
@@ -176,6 +190,9 @@ article p{
     color: #e9dbd5;
     padding-right:150px
 }
+.contacto-formulario{
+    background-image: url(../imagenes/comida.jpg);
+}
 
 footer{
     display:flex;
@@ -184,7 +201,16 @@ footer{
     background-color:#81382E;
     font-size: small;
     color:#e9dbd5;
-    flex-wrap: wrap;
+    padding-top: 0px;
+}
+.footer{
+        padding-bottom: 40px;
 }
 
+footer div{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+
+} 
 
