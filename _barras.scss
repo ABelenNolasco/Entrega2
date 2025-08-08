@@ -1,7 +1,13 @@
-$color-primario:#d4c0b9;
+$color-primario:#f3d2aa;
 $color-secundario:#eead91;
-$color-contraste:#712814;
-$color-contraste-suave:#a46c57;
+$color-contraste:#2c261f;
+$color-contraste-suave:#8c5c64;
+
+@mixin estado-link($color, $text-decoration){
+    color: $color;
+    text-decoration: $text-decoration;
+
+}
 header{
     background-color: $color-contraste;
     border-bottom: 1px solid $color-contraste-suave;
@@ -25,18 +31,21 @@ header{
                     display: inline;
                     padding: 10px;
                     font-size: 20px;
-                        a{text-decoration:none;
+                        a{
+                        text-decoration:none;
+                        &:visited {
+                        @include estado-link($color-primario, none);}
+                        &:hover {
+                        @include estado-link($color-secundario, underline);
+                        }
+
                         }   
                 }
             }
         }
 }
 
-@mixin estado-link($color, $text-decoration){
-    color: $color;
-    text-decoration: $text-decoration;
 
-}
 a:visited {
     @include estado-link($color-primario, none);
 }
