@@ -1,0 +1,189 @@
+
+$color-primario:#d4c0b9;
+$color-secundario:#eead91;
+$color-contraste:#712814;
+$color-contraste-suave:#a46c57;
+@use '_nav.scss';
+
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: LXGW WenKai Mono TC;
+    background-color: #f9dcb2;
+    font-size: 20px;
+    text-align: center;
+    .main{
+        background-image: url(imagenes/fondonuevo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;               
+        display: flex;                  
+        flex-direction: column;
+        justify-content: center;
+        color:$color-secundario;
+        text-shadow: 1px 1px 2px $color-contraste;
+        font-family: LXGW WenKai Mono TC;
+        width: 100%;
+        height:100%;
+        min-height: 100px;
+    }
+}
+
+@mixin estilo-titulos($color, $font-size,$text-shadow){
+    color: $color;
+    font-size: $font-size;
+    text-shadow: $text-shadow;
+}
+.caratula{
+    @include estilo-titulos($color-contraste, 500%, 7px 1px 2px $color-primario);
+    text-align: left;
+    margin: 20px;
+    font-weight: bold;
+}
+
+h2{
+    @include estilo-titulos($color-contraste, 300%, 5px 1px 2px $color-primario);
+    text-align: left;
+    margin: 20px;
+}
+h3{
+    @include estilo-titulos($color-secundario, 200%, 5px 1px 2px $color-contraste);
+    text-align: left;
+    margin: 20px;
+}
+
+.imgtexto{
+    width:80%;
+    height: 350px;
+    padding: 35px;
+    border-radius: 500px;
+    
+}
+.padding{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.servicios-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, auto);
+    gap:20px; 
+    grid-template-areas: 
+    "item1 item1 item2"
+    "item3 item4 item4"
+    "item5 item5 item5";
+    padding: 20px;
+    color:beige
+}
+.item1 {
+grid-area:item1;
+    background-color: #402B22;
+}
+.item2 {
+    grid-area: item2;
+    background-color:$color-contraste-suave;
+}
+.item3 {
+    grid-area: item3;
+    background-color: $color-contraste;
+}
+.item4 {
+    grid-area: item4;
+    background-color: $color-primario;
+}
+.item5 {
+    grid-area: item5;
+    background-color: $color-contraste;
+}
+
+article img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;}
+
+.productos article{
+    display: inline-block;
+
+}
+.formato-card{
+    background-color: #402B22;
+    border-radius: 9px;
+    padding:10px;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    color:#e9dbd5;
+    margin: 10px;
+
+}
+.imagen-card{
+    width: 100%;
+    height:50%;
+    border-radius: 9px;
+    
+}
+
+h2{
+    font-size:60px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px $color-contraste-suave;
+    margin: 25px;
+    margin-top: 80px;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin: 15px;
+}
+
+article p{
+    font-size: 17px;
+    text-align:center;
+    margin: 10px;
+}
+.titulo-card{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    
+}
+@mixin estilo-historia($grid-template-columns, $background-color, $color, $padding, $margin){
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    background-color:$background-color;
+    color: $color;
+    padding:$padding;
+    margin: $margin;
+}
+.historia{
+    @include estilo-historia(65% 35%, $color-contraste, $color-primario, 15px, 30px);
+    display: grid;
+        p{
+            padding: 70px;
+            font-size: 20px;
+        }
+    }
+.mejor-opcion{
+    @include estilo-historia(35% 65%, $color-contraste-suave, $color-primario, 15px, 30px);
+    display: grid;
+    list-style-type: circle;
+    padding-bottom: 15px;
+        ul{
+            list-style-type:circle;
+            padding-top:5%;
+            font-weight: bold;
+        }
+}
+.contacto-formulario{
+    background-image: url(../imagenes/comida.jpg);
+}
+
+.mapa{
+    border-radius: 19px;
+}

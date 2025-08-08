@@ -1,266 +1,257 @@
-html{
-    font-family: LXGW WenKai Mono TC;
-    color:rgb(82, 43, 43);
+header, footer {
+  background-color: #712814;
+  border-bottom: 1px solid #a46c57;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  color: #d4c0b9;
+  font-size: 20px;
 }
-
-.index{
-    background-image: url(imagenes/fondoIndex.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#e9dbd5;
-    text-shadow: 1px 1px 2px black;
-    font-family: LXGW WenKai Mono TC;
-    width: 100%;
-    min-height: 100px;
-    height:100%;
+header .logo, footer .logo {
+  width: 10%;
+  max-width: 50px;
+  height: 60px;
+  margin: 10px;
 }
-.logo{
-    width: 10%;
-    max-width :50px;
-    height:60px;
+header nav, footer nav {
+  font-size: 10px;
+  color: #d4c0b9;
 }
-
-header {
-    display: flex;
-    align-items: center;
-    background-color:#81382E;
-    position: sticky;
-    top:0;
-    color:#e9dbd5;
+header nav ul li, footer nav ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
 }
-
-nav{
-    text-align: center;
-    font-size: 30px;
-    color: #e9dbd5;
-}
-
-nav ul li{
-    display: inline;
-    padding: 10px;
-    font-size: 25px;
-
+header nav ul li a, footer nav ul li a {
+  text-decoration: none;
 }
 
 a:visited {
-    color: #B68B78;
-    text-decoration: none;
+  color: #d4c0b9;
+  text-decoration: none;
 }
 
-main{
-    font-size: 20px;
-    text-align: center;
+a:hover {
+  color: #eead91;
+  text-decoration: underline;
 }
 
-.imgtexto{
-    width:80%;
-    height: 350px;
-    padding: 35px;
+.sidebar {
+  background-color: #a46c57;
+  border-radius: 9px;
+  padding: 1rem;
+  width: 15%;
+  height: 15%;
+  color: #d4c0b9;
+  font-size: 20px;
+  position: fixed;
+  margin: 10px;
 }
 
-body{
-background-color: #e9dbd5;
-color: #402B22;
-margin: 0;
+footer {
+  font-size: small;
+  width: 100%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+footer div {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  align-content: center;
 }
 
-.padding{
-    padding: 40px;
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: LXGW WenKai Mono TC;
+  background-color: #f9dcb2;
+  font-size: 20px;
+  text-align: center;
+}
+html .main, body .main {
+  background-image: url(imagenes/fondonuevo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #eead91;
+  text-shadow: 1px 1px 2px #712814;
+  font-family: LXGW WenKai Mono TC;
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
 }
 
-.sidebar{
-background-color: #402B22;
-    border-radius: 9px;
-    padding:1rem;
-    width: 180px;
-    height: 100px;
-    color:#e9dbd5;
-    font-size: 20px;
-    position: fixed;
-    margin: 10px;
+.caratula {
+  color: #712814;
+  font-size: 500%;
+  text-shadow: 7px 1px 2px #d4c0b9;
+  text-align: left;
+  margin: 20px;
+  font-weight: bold;
 }
 
-.servicios-grid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(3, auto);
-    gap:20px; 
-    grid-template-areas: 
-    "item1 item1 item2"
-    "item3 item4 item4"
-    "item5 item5 item5";
-    padding: 20px;
-    color:beige
+h2 {
+  color: #712814;
+  font-size: 300%;
+  text-shadow: 5px 1px 2px #d4c0b9;
+  text-align: left;
+  margin: 20px;
 }
+
+h3 {
+  color: #eead91;
+  font-size: 200%;
+  text-shadow: 5px 1px 2px #712814;
+  text-align: left;
+  margin: 20px;
+}
+
+.imgtexto {
+  width: 80%;
+  height: 350px;
+  padding: 35px;
+  border-radius: 500px;
+}
+
+.padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  grid-template-areas: "item1 item1 item2" "item3 item4 item4" "item5 item5 item5";
+  padding: 20px;
+  color: beige;
+}
+
 .item1 {
-grid-area:item1;
-    background-color: #402B22;
+  grid-area: item1;
+  background-color: #402B22;
 }
+
 .item2 {
-    grid-area: item2;
-    background-color: #ac7c68;
+  grid-area: item2;
+  background-color: #a46c57;
 }
+
 .item3 {
-    grid-area: item3;
-    background-color: #ac7c68;
+  grid-area: item3;
+  background-color: #712814;
 }
+
 .item4 {
-    grid-area: item4;
-    background-color: #81382E;
+  grid-area: item4;
+  background-color: #d4c0b9;
 }
+
 .item5 {
-    grid-area: item5;
-    background-color: #B68B78;
+  grid-area: item5;
+  background-color: #712814;
 }
 
 article img {
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
 }
 
-.productos article{
-    display: inline-block;
-
-}
-.formato-card{
-    background-color: #402B22;
-    border-radius: 9px;
-    padding:10px;
-    width: 100%;
-    max-width: 300px;
-    height: 400px;
-    color:#e9dbd5;
-    margin: 10px;
-
-}
-.imagen-card{
-    width: 100%;
-    height:50%;
-    border-radius: 9px;
-    
+.productos article {
+  display: inline-block;
 }
 
-h2{
-    font-size:60px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black;
+.formato-card {
+  background-color: #402B22;
+  border-radius: 9px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  color: #e9dbd5;
+  margin: 10px;
 }
 
-h3{
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
+.imagen-card {
+  width: 100%;
+  height: 50%;
+  border-radius: 9px;
 }
 
-article p{
-    font-size: 17px;
-    text-align:center;
-    margin: 10px;
-}
-.titulo-card{
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black;
-    
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #a46c57;
+  margin: 25px;
+  margin-top: 80px;
 }
 
-.mejor-opcion ul{
-    list-style-type:circle;
-    padding-top:70px;
+h3 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin: 15px;
 }
 
-.historia{
-    display: grid;
-    grid-template-columns: 65% 35%;
-    background-color:#402B22;
-    color: #e9dbd5;
-    padding-left:15px;
-}
-.historia p{
-    padding: 70px;
-    font-size: 20px;
-}
-.mejor-opcion{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    background-color:#81382E;
-    color: #e9dbd5;
-    padding-right:15px;
-}
-.contacto-formulario{
-    background-image: url(../imagenes/comida.jpg);
+article p {
+  font-size: 17px;
+  text-align: center;
+  margin: 10px;
 }
 
-footer{
-    display:flex;
-    justify-content:space-evenly;
-    align-items: center;
-    background-color:#81382E;
-    font-size: small;
-    color:#e9dbd5;
-    padding-top: 0px;
-}
-.footer{
-        padding-bottom: 40px;
+.titulo-card {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
 }
 
-footer div{
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
-
-} 
-@media (max-width:594px){
-    .footer{ 
-        flex-direction: column;
-        align-items: center;
-    }
-        footer{ 
-        flex-direction: column;
-        align-items: center;
-    }
+.historia {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  background-color: #712814;
+  color: #d4c0b9;
+  padding: 15px;
+  margin: 30px;
+  display: grid;
+}
+.historia p {
+  padding: 70px;
+  font-size: 20px;
 }
 
-@media (max-width:587px){
-    header{ 
-        flex-direction: column;
-        align-items: center;
-    }
-    }
-@media (max-width:693px){
-    .historia{
-        display: block;
-        text-align: center;
-    padding-bottom: 50px;}
-    .mejor-opcion{
-        display: block;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-    .imgtexto{
-        padding-bottom: 0px;
-    }
-    .mejor-opcion ul{
-        padding-top: 0px;
-    }
-    .sidebar {
-    position: static;
-    width: 100%;
-    height: 10%;
-    margin: 0;
-    text-align: center;
+.mejor-opcion {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: #a46c57;
+  color: #d4c0b9;
+  padding: 15px;
+  margin: 30px;
+  display: grid;
+  list-style-type: circle;
+  padding-bottom: 15px;
 }
-    h2 {
-        font-size: 36px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    .titulo-card {
-        font-size: 20px;
-    }
+.mejor-opcion ul {
+  list-style-type: circle;
+  padding-top: 5%;
+  font-weight: bold;
 }
 
+.contacto-formulario {
+  background-image: url(../imagenes/comida.jpg);
+}
+
+.mapa {
+  border-radius: 19px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

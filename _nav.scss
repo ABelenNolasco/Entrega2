@@ -1,0 +1,75 @@
+$color-primario:#d4c0b9;
+$color-secundario:#eead91;
+$color-contraste:#712814;
+$color-contraste-suave:#a46c57;
+header{
+    background-color: $color-contraste;
+    border-bottom: 1px solid $color-contraste-suave;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    color:$color-primario;
+    font-size:20px;
+    .logo{
+    width: 10%;
+    max-width :50px;
+    height:60px;
+    margin: 10px;
+    }
+        nav{
+        font-size: 10px;
+        color: $color-primario;
+            ul{
+                li{
+                    display: inline;
+                    padding: 10px;
+                    font-size: 20px;
+                        a{text-decoration:none;
+                        }   
+                }
+            }
+        }
+}
+
+@mixin estado-link($color, $text-decoration){
+    color: $color;
+    text-decoration: $text-decoration;
+
+}
+a:visited {
+    @include estado-link($color-primario, none);
+}
+a:hover {
+    @include estado-link($color-secundario, underline);
+}
+
+
+.sidebar{
+background-color: $color-contraste-suave;
+    border-radius: 9px;
+    padding:1rem;
+    width: 15%;
+    height: 15%;
+    color: $color-primario;
+    font-size: 20px;
+    position: fixed;
+    margin: 10px;
+}
+
+footer{
+    @extend header;
+    font-size: small;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+
+        div{
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            align-content: center;
+
+        }
+
+}
