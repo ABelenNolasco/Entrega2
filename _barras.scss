@@ -30,14 +30,17 @@ header{
                 li{
                     display: inline;
                     padding: 10px;
-                    font-size: 20px;
+                    font-size: 250%;
                         a{
                         text-decoration:none;
+                        transition: all 0.5s ease;
                         &:visited {
                         @include estado-link($color-primario, none);}
                         &:hover {
                         @include estado-link($color-secundario, underline);
-                        }
+                        font-size:150% ;
+
+                    }
 
                         }   
                 }
@@ -68,7 +71,7 @@ background-color: $color-contraste-suave;
 
 footer{
     @extend header;
-    font-size: small;
+    font-size: 82%;
     width: 100%;
     text-align: center;
     justify-content: space-evenly;
